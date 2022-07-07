@@ -5,31 +5,38 @@
 * Browsers: last 4 version
 */
 
-/* fraunces-regular - latin */
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/* fraunces-regular - latin-ext_latin */
 @font-face {
-    font-family: 'Fraunces', sans-serif;
+    font-family: 'Fraunces';
     font-style: normal;
     font-weight: 400;
-    src: url('../fonts/fraunces-v22-latin-regular.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/fraunces-v22-latin-ext_latin-regular.eot'); /* IE9 Compat Modes */
     src: local(''),
-         url('../fonts/fraunces-v22-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../fonts/fraunces-v22-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/fraunces-v22-latin-regular.woff') format('woff'), /* Modern Browsers */
-         url('../fonts/fraunces-v22-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('../fonts/fraunces-v22-latin-regular.svg#Fraunces') format('svg'); /* Legacy iOS */
+         url('../fonts/fraunces-v22-latin-ext_latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/fraunces-v22-latin-ext_latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/fraunces-v22-latin-ext_latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/fraunces-v22-latin-ext_latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/fraunces-v22-latin-ext_latin-regular.svg#Fraunces') format('svg'); /* Legacy iOS */
   }
-  /* fraunces-900 - latin */
+  /* fraunces-900 - latin-ext_latin */
   @font-face {
-    font-family: 'Fraunces', sans-serif;
+    font-family: 'Fraunces';
     font-style: normal;
     font-weight: 900;
-    src: url('../fonts/fraunces-v22-latin-900.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/fraunces-v22-latin-ext_latin-900.eot'); /* IE9 Compat Modes */
     src: local(''),
-         url('../fonts/fraunces-v22-latin-900.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../fonts/fraunces-v22-latin-900.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/fraunces-v22-latin-900.woff') format('woff'), /* Modern Browsers */
-         url('../fonts/fraunces-v22-latin-900.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('../fonts/fraunces-v22-latin-900.svg#Fraunces') format('svg'); /* Legacy iOS */
+         url('../fonts/fraunces-v22-latin-ext_latin-900.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/fraunces-v22-latin-ext_latin-900.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/fraunces-v22-latin-ext_latin-900.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/fraunces-v22-latin-ext_latin-900.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/fraunces-v22-latin-ext_latin-900.svg#Fraunces') format('svg'); /* Legacy iOS */
   }
   /* barlow-regular - latin */
 @font-face {
@@ -119,7 +126,7 @@
     padding-left: 33px;
 }
 /* section1 style */
-.hero{
+.hero__info{
     margin-top: 130px;
     background-image: url(../images/coffe-fon.jpg);
     background-repeat: no-repeat;
@@ -176,7 +183,7 @@
     background: #66D2CF;
 }
 /* section2 style */
-.collection{
+.collection__info{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -185,23 +192,23 @@
     margin-left: 70px;
     padding-top: 100px;
 }
-.section2{
+.collection{
     background-image: url(../images/collection.jpg);
     background-position:top -80px  center ;
     background-repeat: no-repeat;
     background-size: 1300px;
 }
-.collection>ul{
+.collection__info>ul{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     list-style: none; 
     z-index: 9;   
 }
-.collection>ul>li{
+.collection__info>ul>li{
     width: 255px;
 }
-.collection>ul>li+li{
+.collection__info>ul>li+li{
     margin-left: 80px;
 }
 .collection__title{
@@ -225,7 +232,7 @@
     color: #333D4B;
 }
 /* section3 style */
-.services{
+.services__info{
     margin-top: 200px;
     background-color: #2C343E;
     display: -webkit-box;
@@ -245,7 +252,7 @@
     padding-bottom: 317px;
 }
 .services__title{
-    font-family: 'Fraunces 9pt';
+    font-family: 'Fraunces';
     font-style: normal;
     font-weight: 900;
     font-size: 40px;
@@ -301,7 +308,7 @@
     background-repeat: no-repeat;
     background-position: top 72px center;
 }
-.list__title{
+.services__list__title{
     margin-top: 150px;
     font-family: 'Fraunces';
     font-style: normal;
@@ -311,7 +318,7 @@
     text-align: center;
     color: #FEFCF7;
 }
-.list__text{
+.services__list__text{
     font-family: 'Barlow', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -323,7 +330,7 @@
     margin-top: 24px;
 }
 /* section4 style */
-.section4{
+.works{
     margin-top: 200px;
     margin-left: 140px;
 }
@@ -344,6 +351,7 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    background-color: #FDD6BA;
 }
 .span1{
     position: relative;
